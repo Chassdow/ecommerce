@@ -1,0 +1,63 @@
+accueil_Route:
+    path: /
+    controller: App\Controller\AccueilController::index
+
+inscription_Route:
+    path: /inscription
+    controller: App\Controller\InscriptionController::catchData
+
+modification_Route:
+    path: /modification
+    controller: App\Controller\ModificationController::catchData
+
+suppression_Route: 
+    path: /suppression
+    controller: App\Controller\SuppressionController::catchData
+
+deconnection_Route:
+    path: /deconnection
+    controller: App\Controller\DeconnectionController::index
+
+connection_Route:
+    path: /connection
+    controller: App\Controller\ConnectionController::index
+    
+admin_route:
+    path: /admin
+    controller: App\Controller\AdminController::searchUsers
+
+admin_delete_user:
+    path: /admin/{id}
+    controller: App\Controller\AdminController::deleteUser
+    methods: [DELETE]
+
+admin_get_categories:
+    path: /admin/categories
+    controller: App\Controller\AdminController::getCategories
+    methods: [GET]
+
+admin_add_category:
+    path: /admin/categories
+    controller: App\Controller\AdminController::addCategory
+    methods: [POST]
+
+admin_delete_category:
+    path: /admin/categories/{id}
+    controller: App\Controller\AdminController::deleteCategory
+    methods: [DELETE]
+
+product_Route:
+    path: /produit
+    controller: App\Controller\ProduitController::getProduct
+
+detail_Route:
+    path: /detail/{id}
+    controller: App\Controller\DetailController::getDetail
+
+categorie_Route:
+    path: /categorie    
+    controller: App\Controller\CategorieController::searchCategorie
+
+productRecherche_Route:
+    path: /produitRecherche
+    controller: App\Controller\ProduitController::searchProduct

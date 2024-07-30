@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Prenom, .Nom, .Mdp, .Adresse, .Email {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: darkorange;
+    font-weight: bolder;
+}

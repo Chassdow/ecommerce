@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Archivo Black';
+    src: url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap") format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap');
+}
+
+html {
+   
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-position-x: 150px;
+}
+
+
+
+#title {
+    font-size: 100px;
+    color: #7F1700;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: darkorange;
+}
+
+p {
+    font-style: italic;
+    font-weight: lighter;
+}
